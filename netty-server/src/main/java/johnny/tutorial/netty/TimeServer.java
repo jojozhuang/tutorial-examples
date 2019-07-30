@@ -17,7 +17,7 @@ public class TimeServer {
     private int port;
 
     public static void main(String[] args) throws Exception {
-        int port = 8080;
+        int port = 8090;
         if (args.length > 0) {
             port = Integer.parseInt(args[0]);
         }
@@ -45,7 +45,7 @@ public class TimeServer {
                     .option(ChannelOption.SO_BACKLOG, 128)          // (5)
                     .childOption(ChannelOption.SO_KEEPALIVE, true); // (6)
 
-            System.out.println("Time Server is listening on port 8080.");
+            System.out.println("Time Server is listening on port 8090.");
 
             // Bind and start to accept incoming connections.
             ChannelFuture f = b.bind(port).sync(); // (7)
