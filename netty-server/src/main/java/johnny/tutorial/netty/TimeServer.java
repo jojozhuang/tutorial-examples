@@ -10,7 +10,7 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
- * Echo whatever received from client
+ * Send current time to client.
  */
 public class TimeServer {
 
